@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,300,700');
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.btn {
+  border-radius: 0;
+  padding: 0.375rem 2.75rem;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}

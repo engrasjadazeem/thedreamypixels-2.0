@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 class section extends React.Component {
     render() {
       return (
-        <div className={this.props.IsDark ? 'initial-padding bg-dark' : 'initial-padding bg-light'}>
+        <div id={this.props.SectionId} className={this.props.IsDark ? 'initial-padding bg-dark' : 'initial-padding bg-light'}>
         <style type="text/css">
           {`
             .initial-padding {
@@ -51,7 +51,7 @@ class section extends React.Component {
         </style>
           <Container>
             <Row className="row r-pb">
-              <Col className="text-center">
+              <Col className="text-center offset-2 col-md-8 text-center section-heading">
                 <h2 className={this.props.IsDark ? 'section-title bg-dark' : 'section-title'}>{this.props.Name}</h2>
                 <p className={this.props.IsDark ? 'lead bg-dark' : 'lead'}>{this.props.Description}</p>
               </Col>

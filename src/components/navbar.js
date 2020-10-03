@@ -4,27 +4,44 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 class nav extends React.Component {
   render() {
     return (
-      <Navbar bg="light" expand="lg" className="fixed-top">
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Navbar>
+      <div id="home">
+      <style type="text/css">
+        {`
+          .navbar-brand {
+            font-family: "Roboto Slab", sans-serif;
+          }
+
+          .navbar-light .navbar-nav .nav-link {
+            padding: 0px 20px;
+            border-bottom: 3px solid transparent;
+            transition: 0.3s;
+            font-family: "Roboto Slab", sans-serif;
+          }
+
+          .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+            border-bottom: 3px solid #7DA7D9;
+            opacity: 1;
+            font-family: "Roboto Slab", sans-serif;
+          }
+        `}
+      </style>
+        <Navbar bg="light" expand="lg" className="fixed-top">
+          <Navbar.Brand href="#home">The Dreamy Pixels</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="ml-auto">
+                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                <Nav.Link href="#about">About</Nav.Link>
+                <Nav.Link href="#contact">Contact</Nav.Link>
+                <NavDropdown title="Language" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#language/en">English</NavDropdown.Item>
+                  <NavDropdown.Item href="#language/se">Swedish</NavDropdown.Item>
+                </NavDropdown>
+              </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+      </div>
     );
   }
 }

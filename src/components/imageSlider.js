@@ -19,7 +19,6 @@ class imageSlider extends React.Component {
           }
 
           .navbar-hack {
-            position: relative;
             top: 60px;
           }
         `}

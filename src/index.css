@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,300,700');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -14,4 +18,101 @@ body {
   right: 0;
   left: 0;
   z-index: 999;
+}
+
+.img-grid {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.img-grid a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 12;
+    background: rgba(68, 72, 83, 0.9);
+    text-align: center;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: #7DA7D9;
+    text-decoration: none;
+}
+
+.img-grid a > div {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: 0.8s, ease-out;
+    -o-transition: 0.8s, ease-out;
+    transition: 0.8s, ease-out;
+}
+
+.img-grid a:hover > div {
+    bottom: 40px;
+    -webkit-transition: 0.8s, ease-out;
+    -o-transition: 0.8s, ease-out;
+    transition: 0.8s, ease-out;
+}
+
+.img-grid a .meta {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    display: block;
+    position: relative;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.img-grid img {
+    position: relative;
+    z-index: 10;
+}
+
+.img-grid a .title {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 0;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.img-grid a:hover, a:focus, a:active {
+    color: #448CCB;
+    outline: none;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.img-grid a .meta:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    margin-left: -10px;
+    height: 2px;
+    left: 50%;
+    background: #7DA7D9;
 }

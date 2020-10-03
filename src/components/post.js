@@ -3,10 +3,16 @@ import React from 'react';
 class Post extends React.Component {
   render() {
     return (
-      <div>
-        <h3>{this.props.title}</h3>
-        <a href={this.props.link}>{this.props.description}</a>
-        <button onClick={() => this.props.handleMyClick()}>hello</button>
+      <div className="col-md-4 col-sm-4 col-xs-6 col-xxs-12">
+        <div className="img-grid">
+          <img src={this.props.imageUrl} alt={this.props.imageAlt} className="img-responsive" />
+          <a href={this.props.linkUrl} className="transition">
+            <div>
+              <span className="meta">{this.props.numberOfPhotos} images</span>
+              <h2 className="title">{this.props.title}</h2>
+            </div>
+          </a>
+        </div>
       </div>
     );
   }

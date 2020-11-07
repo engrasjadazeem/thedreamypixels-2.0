@@ -7,6 +7,7 @@ import './assets/bootstrap/bootstrap-reboot.css';
 import './assets/bootstrap/bootstrap-grid.css';
 
 import './index.css';
+import './assets/css/icomoon.css';
 
 ReactDOM.render(
   <Page />,

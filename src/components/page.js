@@ -5,6 +5,8 @@ import Nav from './navbar';
 import ImageSlider from './imageSlider';
 import Section from './section';
 import Post from './post';
+import SmallSlider from './smallSlider';
+import Footer from './footer';
 
 import imageUrl from '../assets/images/thumbnails/UweraAndJonas.jpg';
 
@@ -68,10 +70,22 @@ class Page extends React.Component {
 
         <Section Name="About"
           SectionId="about"
-          Description="Hi, we are Asjad and Aroob! A husband and wife photographer couple. We truly believe in the union of two hearts. Marriage and love, capturing the magical moments between two lovers. Working with different people and cultures makes us happy. Our moto is to build a friendly relationship so that we can enjoy your lucky day together."
+          Description="We truly believe in the union of two hearts. Marriage and love, capturing the magical moments between two lovers. Working with different people and cultures makes us happy. Our moto is to build a friendly relationship so that everyone enjoy your lucky day."
           IsDark
+          MoreWidth
           Content={(
-            <p>Content</p>
+            <div className="row">
+              <div className="col-md-6 col-xs-12">
+                <img src={imageUrl}
+                  className="portrait-photo"
+                  alt="Photographers photo" />
+              </div>
+              <div className="col-md-6 col-xs-12">
+                <h2 className="txt-white">Asjad Azeem</h2>
+  							<span class="meta small-caps">Photographer, Cinematographer</span>
+  							<p class="txt-ash-grey">I have always been interested in capturing emotions, may it be in any form. Weddings bring more joy to me personally because everyone is so happy! I enjoy landscape and street photography as well.</p>
+              </div>
+            </div>
           )}
           />
 
@@ -79,17 +93,16 @@ class Page extends React.Component {
           SectionId="contact"
           Description="Let's talk about your story now"
           Content={(
-            <p>Content</p>
+            <div className="text-center">
+              <p class="animate-box fadeInUp animated">Every story is unique in its own way. What makes your story significant than others?</p>
+              <p class="animate-box fadeInUp animated"><a href="https://www.facebook.com/thedreamypixels/" target="_blank" class="btn btn-primary btn-lg">Let's talk?</a></p>
+            </div>
           )}
           />
 
-        <Section Name="Reviews"
-          SectionId="reviews"
-          Description="Reviews"
-          Content={(
-            <p>Content</p>
-          )}
-          />
+        <SmallSlider />
+
+        <Footer />
       </div>
     );
   }

@@ -1,30 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Post from './post';
+import Page from './components/page';
 
-class Page extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+import './assets/bootstrap/bootstrap.css';
+import './assets/bootstrap/bootstrap-reboot.css';
+import './assets/bootstrap/bootstrap-grid.css';
 
-    };
-  }
-
-  handleClick() {
-    alert('hey');
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Page</h1>
-        <Post title="Title 1" link="#" description="abcd" handleMyClick={() => this.handleClick()} />
-      </div>
-    );
-  }
-}
+import './index.css';
+import './assets/css/icomoon.css';
 
 ReactDOM.render(
   <Page />,
   document.getElementById('root')
-)
+);

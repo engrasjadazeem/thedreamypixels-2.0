@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/thedreamypixels-generated/static/css/main.b73b87c0.chunk.css",
+    "main.js": "/thedreamypixels-generated/static/js/main.6c1f6f7a.chunk.js",
+    "main.js.map": "/thedreamypixels-generated/static/js/main.6c1f6f7a.chunk.js.map",
+    "runtime-main.js": "/thedreamypixels-generated/static/js/runtime-main.7eb4e583.js",
+    "runtime-main.js.map": "/thedreamypixels-generated/static/js/runtime-main.7eb4e583.js.map",
+    "static/js/2.cae695cd.chunk.js": "/thedreamypixels-generated/static/js/2.cae695cd.chunk.js",
+    "static/js/2.cae695cd.chunk.js.map": "/thedreamypixels-generated/static/js/2.cae695cd.chunk.js.map",
+    "index.html": "/thedreamypixels-generated/index.html",
+    "precache-manifest.13064a6dd8b0c601132e2d68ddb84cb5.js": "/thedreamypixels-generated/precache-manifest.13064a6dd8b0c601132e2d68ddb84cb5.js",
+    "service-worker.js": "/thedreamypixels-generated/service-worker.js",
+    "static/css/main.b73b87c0.chunk.css.map": "/thedreamypixels-generated/static/css/main.b73b87c0.chunk.css.map",
+    "static/js/2.cae695cd.chunk.js.LICENSE.txt": "/thedreamypixels-generated/static/js/2.cae695cd.chunk.js.LICENSE.txt",
+    "static/media/UweraAndJonas.jpg": "/thedreamypixels-generated/static/media/UweraAndJonas.674b682c.jpg",
+    "static/media/icomoon.css": "/thedreamypixels-generated/static/media/icomoon.e84b7863.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7eb4e583.js",
+    "static/js/2.cae695cd.chunk.js",
+    "static/css/main.b73b87c0.chunk.css",
+    "static/js/main.6c1f6f7a.chunk.js"
+  ]
+}

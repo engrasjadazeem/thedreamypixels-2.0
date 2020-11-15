@@ -14,7 +14,51 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      albums: [
+          {
+            name : 'Uwera & Jonas',
+            thumbnailUrl : 'https://i.ibb.co/PG2mNRn/Uwera-And-Jonas.jpg',
+            imageAlt: '',
+            linkUrl: '#',
+            numberOfPhotos: 5
+          },
+          {
+            name : 'Victoria & Stepan',
+            thumbnailUrl : 'https://i.ibb.co/5x6Y1Br/Victoria-And-Stepan.jpg',
+            imageAlt: '',
+            linkUrl: '#',
+            numberOfPhotos: 5
+          },
+          {
+            name : 'Lina & Wang',
+            thumbnailUrl : 'https://i.ibb.co/7r8zs5k/Li-Na-And-Wang.jpg',
+            imageAlt: '',
+            linkUrl: '#',
+            numberOfPhotos: 5
+          },
+          {
+            name : 'Dina & Sammak',
+            thumbnailUrl : 'https://i.ibb.co/gJ7SD0Z/Dina-And-Sammak.jpg',
+            imageAlt: '',
+            linkUrl: '#',
+            numberOfPhotos: 5
+          },
+          {
+            name : 'Sofia & Kids',
+            thumbnailUrl : 'https://i.ibb.co/7XCwRv2/Sofia-And-Kids.jpg',
+            imageAlt: '',
+            linkUrl: '#',
+            numberOfPhotos: 5
+          },
+          {
+            name : 'Minha Photoshoot',
+            thumbnailUrl : 'https://i.ibb.co/PYwCCfm/Minha-Photoshoot.jpg',
+            imageAlt: '',
+            linkUrl: '#',
+            numberOfPhotos: 5
+          },
+        ],
+      imageUrl: 'https://i.ibb.co/PG2mNRn/Uwera-And-Jonas.jpg'
     };
   }
 
@@ -33,37 +77,14 @@ class Page extends React.Component {
           Description="Helping you to capture your precious moments and making memories out of it."
           Content={
             <div className="row">
-              <Post title="Uwera & Jonas"
-                imageUrl={imageUrl}
-                imageAlt="Wedding photo"
-                linkUrl="#"
-                numberOfPhotos="5" />
-              <Post title="Uwera & Jonas"
-                imageUrl={imageUrl}
-                imageAlt="Wedding photo"
-                linkUrl="#"
-                numberOfPhotos="5" />
-              <Post title="Uwera & Jonas"
-                imageUrl={imageUrl}
-                imageAlt="Wedding photo"
-                linkUrl="#"
-                numberOfPhotos="5" />
-              <Post title="Uwera & Jonas"
-                imageUrl={imageUrl}
-                imageAlt="Wedding photo"
-                linkUrl="#"
-                numberOfPhotos="5" />
-              <Post title="Uwera & Jonas"
-                imageUrl={imageUrl}
-                imageAlt="Wedding photo"
-                linkUrl="#"
-                numberOfPhotos="5" />
-              <Post title="Uwera & Jonas"
-                imageUrl={imageUrl}
-                imageAlt="Wedding photo"
-                linkUrl="#"
-                numberOfPhotos="5" />
-
+            {this.state.albums.map((album, index) =>
+              <Post key= {index}
+                title = {album.name}
+                imageUrl = {album.thumbnailUrl}
+                imageAlt = {album.imageAlt}
+                linkUrl = {album.linkUrl}
+                numberOfPhotos = {album.numberOfPhotos} />
+            )}
             </div>
           }
           />
@@ -82,8 +103,8 @@ class Page extends React.Component {
               </div>
               <div className="col-md-6 col-xs-12">
                 <h2 className="txt-white">Asjad Azeem</h2>
-  							<span class="meta small-caps">Photographer, Cinematographer</span>
-  							<p class="txt-ash-grey">I have always been interested in capturing emotions, may it be in any form. Weddings bring more joy to me personally because everyone is so happy! I enjoy landscape and street photography as well.</p>
+  							<span className="meta small-caps">Photographer, Cinematographer</span>
+  							<p className="txt-ash-grey">I have always been interested in capturing emotions, may it be in any form. Weddings bring more joy to me personally because everyone is so happy! I enjoy landscape and street photography as well.</p>
               </div>
             </div>
           )}
@@ -94,8 +115,8 @@ class Page extends React.Component {
           Description="Let's talk about your story now"
           Content={(
             <div className="text-center">
-              <p class="animate-box fadeInUp animated">Every story is unique in its own way. What makes your story significant than others?</p>
-              <p class="animate-box fadeInUp animated"><a href="https://www.facebook.com/thedreamypixels/" target="_blank" class="btn btn-primary btn-lg">Let's talk?</a></p>
+              <p className="animate-box fadeInUp animated">Every story is unique in its own way. What makes your story significant than others?</p>
+              <p className="animate-box fadeInUp animated"><a href="https://www.facebook.com/thedreamypixels/" target="_blank" className="btn btn-primary btn-lg">Let's talk?</a></p>
             </div>
           )}
           />

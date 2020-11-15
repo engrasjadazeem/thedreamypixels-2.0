@@ -69,30 +69,30 @@ class footer extends React.Component {
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2253.5515518713914!2d12.997180798966697!3d55.60981802199358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1548544181252"
                       width="100%"
                       height="350"
-                      frameborder="0" />
+                      frameBorder="0" />
             </div>
           </div>
           <div className="row additional-margin">
             <div className="col-md-4">
-              <div class="footer-widget">
+              <div className="footer-widget">
                 <p>© <a href="https://www.facebook.com/pg/thedreamypixels" target="_blank">The Dreamy Pixels</a>.</p>
-                <p class="reduce-txt-size">All Rights Reserved.</p>
+                <p className="reduce-txt-size">All Rights Reserved.</p>
               </div>
             </div>
             <div className="col-md-8">
-              <div class="footer-widget">
-                <ul class="social pull-right">
+              <div className="footer-widget">
+                <ul className="social pull-right">
                   <li>
-                    <a href="https://www.facebook.com/pg/thedreamypixels" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="https://www.facebook.com/pg/thedreamypixels" target="_blank"><i className="icon-facebook"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/thedreamypixels" target="_blank"><i class="icon-instagram"></i></a>
+                    <a href="https://www.instagram.com/thedreamypixels" target="_blank"><i className="icon-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="mailto:thedreamypixels@gmail.com" target="_blank"><i class="icon-google"></i></a>
+                    <a href="mailto:thedreamypixels@gmail.com" target="_blank"><i className="icon-google"></i></a>
                   </li>
                 </ul>
-                <div class="footer-widget">
+                <div className="footer-widget">
                 </div>
               </div>
             </div>

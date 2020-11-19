@@ -13,6 +13,24 @@ class Page extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      menu: [
+        {
+          label: 'Home',
+          link: '#home'
+        },
+        {
+          label: 'Portfolio',
+          link: '#portfolio'
+        },
+        {
+          label: 'About',
+          link: '#about'
+        },
+        {
+          label: 'Contact',
+          link: '#contact'
+        }
+      ],
       sections: [
         {
           id: 'portfolio',
@@ -92,6 +110,28 @@ class Page extends React.Component {
             buttonLink: 'https://www.facebook.com/thedreamypixels/'
           }
         }
+      ],
+      mainCarousel: [
+        {
+          title: 'Text',
+          imageUrl: 'https://i.ibb.co/HHxFQbw/04.jpg',
+          alt: ''
+        },
+        {
+          title: 'Text',
+          imageUrl: 'https://i.ibb.co/ZWmpW59/03.jpg',
+          alt: ''
+        },
+        {
+          title: 'Text',
+          imageUrl: 'https://i.ibb.co/0f8xBxJ/01.jpg',
+          alt: ''
+        },
+        {
+          title: 'Text',
+          imageUrl: 'https://i.ibb.co/yPp3C5k/02.jpg',
+          alt: ''
+        }
       ]
     };
   }
@@ -103,8 +143,9 @@ class Page extends React.Component {
   render() {
     return (
       <div>
-        <Nav />
-        <ImageSlider />
+        <Nav menuItems={this.state.menu} />
+
+        <ImageSlider images={this.state.mainCarousel}/>
 
         {this.state.sections.map((section, _indSection) =>
           <Section

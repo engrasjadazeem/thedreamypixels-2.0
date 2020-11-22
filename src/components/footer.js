@@ -61,12 +61,12 @@ class footer extends React.Component {
           </style>
           <div className="row">
             <div className="col-md-4">
-              <p className="lead animate-box fadeInUp animated">Malmö, Sweden</p>
-              <p className="animate-box fadeInUp animated"><a rel="noopener noreferrer" href="mailto:thedreamypixels@gmail.com" target="_blank">thedreamypixels@gmail.com</a></p>
-              <p className="animate-box fadeInUp animated"><a rel="noopener noreferrer" href="tel:0046734867683">0046-73-486-76-83</a></p>
+              <p className="lead animate-box fadeInUp animated">{this.props.contactData.address}</p>
+              <p className="animate-box fadeInUp animated"><a rel="noopener noreferrer" href={'mailto:' + this.props.contactData.email} target="_blank">{this.props.contactData.email}</a></p>
+              <p className="animate-box fadeInUp animated"><a rel="noopener noreferrer" href={'tel:' + this.props.contactData.phone}>{this.props.contactData.phone}</a></p>
             </div>
             <div className="col-md-8">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2253.5515518713914!2d12.997180798966697!3d55.60981802199358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1548544181252"
+              <iframe src={this.props.contactData.mapSrc}
                       width="100%"
                       height="350"
                       frameBorder="0" />
@@ -83,13 +83,13 @@ class footer extends React.Component {
               <div className="footer-widget">
                 <ul className="social pull-right">
                   <li>
-                    <a href="https://www.facebook.com/pg/thedreamypixels" target="_blank"><i className="icon-facebook"></i></a>
+                    <a href={this.props.contactData.facebookLink} target="_blank"><i className="icon-facebook"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/thedreamypixels" target="_blank"><i className="icon-instagram"></i></a>
+                    <a href={this.props.contactData.instagramLink} target="_blank"><i className="icon-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="mailto:thedreamypixels@gmail.com" target="_blank"><i className="icon-google"></i></a>
+                    <a href={this.props.contactData.emailLink} target="_blank"><i className="icon-google"></i></a>
                   </li>
                 </ul>
                 <div className="footer-widget">

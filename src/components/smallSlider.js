@@ -2,6 +2,14 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
 class smallSlider extends React.Component {
+  constructor(props) {
+      super(props);
+  }
+
+  closeAlbum() {
+    this.props.closeAlbum();
+  }
+
   render() {
     return (
       <div>
@@ -9,6 +17,10 @@ class smallSlider extends React.Component {
         {`
           .show-no-border {
             border: none;
+          }
+
+          .place-at-bottom {
+            bottom: 0%;
           }
 
           .limitHeight {
@@ -39,22 +51,63 @@ class smallSlider extends React.Component {
             opacity: .5;
             background: #444853;
           }
+
+          .portrait-in-frame {
+            height: 60vh;
+            width: 100%;
+            overflow: hidden;
+            object-fit: contain;
+            zoom: 1.4;
+          }
+
+          #btn-close {
+            text-align: center;
+            font-size: 10px;
+            cursor: pointer;
+            text-align: center;
+            display: block;
+          	width: 50%;
+          	margin: 0 auto;
+          }
         `}
       </style>
-        <Carousel className="limitHeight">
+        <Carousel className={this.props.cssClass}>
           {
+            this.props.reviews &&
             this.props.reviews.map((review, index) =>
-              <Carousel.Item>
+              <Carousel.Item key={index}>
                 <img
                   className="d-block justify-image"
                   src={review.backgroundImageUrl}
                   alt={review.altTag}
                 />
-                <div class="overlay"></div>
+                <div className="overlay"></div>
                 <Carousel.Caption className="show-no-border">
                   <p className="text-align">
                     {review.text}
                     <span className="author-name">— {review.author} on {review.date}</span>
+                  </p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            )
+          }
+
+          {
+            this.props.photos &&
+            this.props.photos.map((photo, index) =>
+              <Carousel.Item key={index}>
+                <a id="btn-close"
+                  onClick={() => this.closeAlbum()}>
+                    Close
+                </a>
+                <img
+                  className="d-block portrait-in-frame"
+                  src={photo.imageUrl}
+                  alt={photo.altTag}
+                />
+                <Carousel.Caption className="show-no-border place-at-bottom">
+                  <p>
+                    {photo.text}
                   </p>
                 </Carousel.Caption>
               </Carousel.Item>

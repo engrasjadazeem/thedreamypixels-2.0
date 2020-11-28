@@ -32,7 +32,9 @@ class nav extends React.Component {
               <Nav className="ml-auto">
                 {
                   this.props.menuItems.map((menuItem, index) =>
-                    <Nav.Link href={menuItem.link}>{menuItem.label}</Nav.Link>
+                    <Nav.Link
+                      key={index}
+                      href={menuItem.link}>{menuItem.label}</Nav.Link>
                   )
                 }
                 <NavDropdown title="Language" id="basic-nav-dropdown">

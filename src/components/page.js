@@ -44,43 +44,211 @@ class Page extends React.Component {
                 name : 'Uwera & Jonas',
                 thumbnailUrl : 'https://i.ibb.co/PG2mNRn/Uwera-And-Jonas.jpg',
                 imageAlt: '',
-                linkUrl: '#',
-                numberOfPhotos: 5
+                linkUrl: '#gallery',
+                numberOfPhotos: 5,
+                photos: [
+                  {
+                    imageUrl: 'https://i.ibb.co/j3tjr7H/09.jpg',
+                    altTag: '',
+                    text: 'A love story from Lund, Sweden.'
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/ZWmpW59/03.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/zSX38ZQ/06.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/QJBN2nd/08.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/XsdPzMz/07.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/NT8wqNN/05.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/zxdL37M/02.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/rK9Y0cJ/10.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/LZkmNsZ/04.jpg',
+                    altTag: '',
+                    text: ''
+                  }
+
+                ]
               },
               {
                 name : 'Victoria & Stepan',
                 thumbnailUrl : 'https://i.ibb.co/5x6Y1Br/Victoria-And-Stepan.jpg',
                 imageAlt: '',
                 linkUrl: '#',
-                numberOfPhotos: 5
+                numberOfPhotos: 5,
+                photos: [
+                  {
+                    imageUrl: 'https://i.ibb.co/L9n9Phz/03.jpg',
+                    altTag: '',
+                    text: 'A love story originally from Krasnodar, Russia celebrated in Paris, France.'
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/nM2n1xG/01.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/L9n9Phz/03.jpg',
+                    altTag: '',
+                    text: ''
+                  }
+                ]
               },
               {
                 name : 'Lina & Wang',
                 thumbnailUrl : 'https://i.ibb.co/7r8zs5k/Li-Na-And-Wang.jpg',
                 imageAlt: '',
                 linkUrl: '#',
-                numberOfPhotos: 5
+                numberOfPhotos: 5,
+                photos: [
+                  {
+                    imageUrl: 'https://i.ibb.co/9ng7rg4/04.jpg',
+                    altTag: '',
+                    text: 'A love story originally from Beijing, China celebrated in Paris, France.'
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/xCtrcN7/03.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/98LNM4Q/02.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/GPBMkGz/01.jpg',
+                    altTag: '',
+                    text: ''
+                  }
+                ]
               },
               {
-                name : 'Dina & Sammak',
+                name : 'Dima & Sammak',
                 thumbnailUrl : 'https://i.ibb.co/gJ7SD0Z/Dina-And-Sammak.jpg',
                 imageAlt: '',
                 linkUrl: '#',
-                numberOfPhotos: 5
+                numberOfPhotos: 5,
+                photos: [
+                  {
+                    imageUrl: 'https://i.ibb.co/4T4Q6xd/01.jpg',
+                    altTag: '',
+                    text: 'A different type of Love-story where bride and groom flew from different countries and met each other at Copenhagen, Denmark.'
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/HX3KNBn/02.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/8spfRN9/03.jpg',
+                    altTag: '',
+                    text: ''
+                  }
+                ]
               },
               {
                 name : 'Sofia & Kids',
                 thumbnailUrl : 'https://i.ibb.co/7XCwRv2/Sofia-And-Kids.jpg',
                 imageAlt: '',
                 linkUrl: '#',
-                numberOfPhotos: 5
+                numberOfPhotos: 5,
+                photos: [
+                  {
+                    imageUrl: 'https://i.ibb.co/KwP9DHY/04.jpg',
+                    altTag: '',
+                    text: 'An autumn themed photoshoot at Pildammsparken in Malmö, Sweden.'
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/z781snv/02.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/qJRbnR7/03.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/TH27X18/01.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/J71z0xG/05.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/ZJ3xBNC/06.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/2WHB5kK/07.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/k218Qs0/08.jpg',
+                    altTag: '',
+                    text: ''
+                  }
+                ]
               },
               {
                 name : 'Minha Photoshoot',
                 thumbnailUrl : 'https://i.ibb.co/PYwCCfm/Minha-Photoshoot.jpg',
                 imageAlt: '',
                 linkUrl: '#',
-                numberOfPhotos: 5
+                numberOfPhotos: 5,
+                photos: [
+                  {
+                    imageUrl: 'https://i.ibb.co/W6W0PHp/01.jpg',
+                    altTag: '',
+                    text: 'Smile and the world smiles with you!'
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/XCxrcK4/04.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/MVndFSb/02.jpg',
+                    altTag: '',
+                    text: ''
+                  },
+                  {
+                    imageUrl: 'https://i.ibb.co/4jSw9j9/03.jpg',
+                    altTag: '',
+                    text: ''
+                  }
+                ]
               },
             ]
           }
@@ -114,12 +282,17 @@ class Page extends React.Component {
       mainCarousel: [
         {
           title: 'We would love to tell your story',
-          imageUrl: 'https://i.ibb.co/HHxFQbw/04.jpg',
+          imageUrl: 'https://i.ibb.co/L9n9Phz/03.jpg',
           alt: ''
         },
         {
           title: 'We would love to tell your story',
-          imageUrl: 'https://i.ibb.co/ZWmpW59/03.jpg',
+          imageUrl: 'https://i.ibb.co/ZJ3xBNC/06.jpg',
+          alt: ''
+        },
+        {
+          title: 'We would love to tell your story',
+          imageUrl: 'https://i.ibb.co/3rwCb8W/03.jpg',
           alt: ''
         },
         {
@@ -129,7 +302,7 @@ class Page extends React.Component {
         },
         {
           title: 'We would love to tell your story',
-          imageUrl: 'https://i.ibb.co/yPp3C5k/02.jpg',
+          imageUrl: 'https://i.ibb.co/W6W0PHp/01.jpg',
           alt: ''
         }
       ],
@@ -185,17 +358,35 @@ class Page extends React.Component {
         instagramLink: 'https://www.instagram.com/thedreamypixels/',
         emailLink: 'mailto:thedreamypixels@gmail.com',
         mapSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2253.5515518713914!2d12.997180798966697!3d55.60981802199358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sse!4v1548544181252'
-      }
+      },
+      currentAlbum: []
     };
   }
 
-  handleClick() {
-    alert('hey');
+  selectCurrentAlbum = (photos) => {
+    this.setState({
+      currentAlbum: photos
+    });
+  }
+
+  closeAlbum = () => {
+    this.setState({
+      currentAlbum: []
+    });
   }
 
   render() {
     return (
       <div>
+        <style type="text/css">
+        {`
+          .gallery-container {
+            height: 800px;
+            background: #f8f9fa;
+            overflow: hidden;
+          }
+        `}
+        </style>
         <Nav menuItems={this.state.menu} />
 
         <ImageSlider images={this.state.mainCarousel}/>
@@ -215,13 +406,26 @@ class Page extends React.Component {
                     {
                       section.content.albums.map((album, index) =>
                       <Post key= {index}
-                        title = {album.name}
-                        imageUrl = {album.thumbnailUrl}
-                        imageAlt = {album.imageAlt}
-                        linkUrl = {album.linkUrl}
-                        numberOfPhotos = {album.numberOfPhotos} />
+                        title= {album.name}
+                        imageUrl= {album.thumbnailUrl}
+                        imageAlt= {album.imageAlt}
+                        linkUrl= {album.linkUrl}
+                        numberOfPhotos= {album.numberOfPhotos}
+                        photos= {album.photos}
+                        selectCurrentAlbum={this.selectCurrentAlbum}
+                        />
                       )
                     }
+                  </div>
+                }
+
+                { section.id === 'portfolio' &&
+                  this.state.currentAlbum.length > 0 &&
+                  <div id="gallery"
+                      className="gallery-container">
+                      <SmallSlider
+                        closeAlbum={this.closeAlbum}
+                        photos={this.state.currentAlbum} />
                   </div>
                 }
 
@@ -252,7 +456,8 @@ class Page extends React.Component {
         )}
 
         <SmallSlider
-          reviews={this.state.reviews} />
+          reviews={this.state.reviews}
+          cssClass="limitHeight" />
 
         <Footer
           contactData={this.state.contact}/>

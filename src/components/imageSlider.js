@@ -44,13 +44,13 @@ class imageSlider extends React.Component {
         <Carousel>
           {
             this.props.images.map((image, index) =>
-              <Carousel.Item>
+              <Carousel.Item key={index} >
                 <img
                   className="d-block justify-image"
                   src={image.imageUrl}
                   alt={image.altTag}
                 />
-                <div class="overlay"></div>
+                <div className="overlay"></div>
                 <Carousel.Caption>
                   <h1>{image.title}</h1>
                 </Carousel.Caption>

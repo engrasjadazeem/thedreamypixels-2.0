@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 class nav extends React.Component {
   render() {
@@ -30,10 +30,13 @@ class nav extends React.Component {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ml-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+                {
+                  this.props.menuItems.map((menuItem, index) =>
+                    <Nav.Link
+                      key={index}
+                      href={menuItem.link}>{menuItem.label}</Nav.Link>
+                  )
+                }
                 <NavDropdown title="Language" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#language/en">English</NavDropdown.Item>
                   <NavDropdown.Item href="#language/se">Swedish</NavDropdown.Item>

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95949c2b57959636bdde5a14b0725593",
+    "revision": "098a550296732edbbefdb1e1ef1a4405",
     "url": "/thedreamypixels-2.0/index.html"
   },
   {
-    "revision": "456a6a73bc2a45a33da2",
+    "revision": "2c75ef8c093e3b609f06",
     "url": "/thedreamypixels-2.0/static/css/main.8a33e88b.chunk.css"
   },
   {
-    "revision": "bab15b3cda2672af5f5d",
-    "url": "/thedreamypixels-2.0/static/js/2.cae695cd.chunk.js"
+    "revision": "f8a5c55bd9ff91ff7af4",
+    "url": "/thedreamypixels-2.0/static/js/2.7df42314.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/thedreamypixels-2.0/static/js/2.cae695cd.chunk.js.LICENSE.txt"
+    "url": "/thedreamypixels-2.0/static/js/2.7df42314.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "456a6a73bc2a45a33da2",
-    "url": "/thedreamypixels-2.0/static/js/main.6c1f6f7a.chunk.js"
+    "revision": "2c75ef8c093e3b609f06",
+    "url": "/thedreamypixels-2.0/static/js/main.b6ed6f5e.chunk.js"
   },
   {
     "revision": "6645e630b3b0c3544830",

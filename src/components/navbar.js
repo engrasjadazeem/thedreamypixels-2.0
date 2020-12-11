@@ -2,6 +2,15 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 class nav extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  changeLanguage = (language) => {
+    debugger;
+    this.props.changeLanguage(language);
+  }
+
   render() {
     return (
       <div id="home">
@@ -34,12 +43,15 @@ class nav extends React.Component {
                   this.props.menuItems.map((menuItem, index) =>
                     <Nav.Link
                       key={index}
-                      href={menuItem.link}>{menuItem.label}</Nav.Link>
+                      href={menuItem.link}>
+                      {this.props.language == 'en' ? menuItem.label : '' }
+                      {this.props.language == 'sv' ? menuItem.label_sv : '' }
+                    </Nav.Link>
                   )
                 }
-                <NavDropdown title="Language" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#language/en">English</NavDropdown.Item>
-                  <NavDropdown.Item href="#language/se">Swedish</NavDropdown.Item>
+                <NavDropdown title={this.props.language == 'en' ? 'Language' : 'Språk'} id="basic-nav-dropdown">
+                  <NavDropdown.Item onClick={() => this.changeLanguage('en')}>English</NavDropdown.Item>
+                  <NavDropdown.Item onClick={() => this.changeLanguage('sv')}>Swedish</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>

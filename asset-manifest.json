@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/thedreamypixels-2.0/static/css/main.8a33e88b.chunk.css",
-    "main.js": "/thedreamypixels-2.0/static/js/main.b6ed6f5e.chunk.js",
-    "main.js.map": "/thedreamypixels-2.0/static/js/main.b6ed6f5e.chunk.js.map",
-    "runtime-main.js": "/thedreamypixels-2.0/static/js/runtime-main.c6351fd0.js",
-    "runtime-main.js.map": "/thedreamypixels-2.0/static/js/runtime-main.c6351fd0.js.map",
-    "static/js/2.7df42314.chunk.js": "/thedreamypixels-2.0/static/js/2.7df42314.chunk.js",
-    "static/js/2.7df42314.chunk.js.map": "/thedreamypixels-2.0/static/js/2.7df42314.chunk.js.map",
-    "index.html": "/thedreamypixels-2.0/index.html",
-    "precache-manifest.191b1f45fe7571ec388964b5fa251465.js": "/thedreamypixels-2.0/precache-manifest.191b1f45fe7571ec388964b5fa251465.js",
-    "service-worker.js": "/thedreamypixels-2.0/service-worker.js",
-    "static/css/main.8a33e88b.chunk.css.map": "/thedreamypixels-2.0/static/css/main.8a33e88b.chunk.css.map",
-    "static/js/2.7df42314.chunk.js.LICENSE.txt": "/thedreamypixels-2.0/static/js/2.7df42314.chunk.js.LICENSE.txt",
-    "static/media/UweraAndJonas.jpg": "/thedreamypixels-2.0/static/media/UweraAndJonas.674b682c.jpg",
-    "static/media/icomoon.css": "/thedreamypixels-2.0/static/media/icomoon.e84b7863.svg"
+    "main.css": "/static/css/main.4f247b2e.chunk.css",
+    "main.js": "/static/js/main.b6ed6f5e.chunk.js",
+    "main.js.map": "/static/js/main.b6ed6f5e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3374ac37.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3374ac37.js.map",
+    "static/js/2.7df42314.chunk.js": "/static/js/2.7df42314.chunk.js",
+    "static/js/2.7df42314.chunk.js.map": "/static/js/2.7df42314.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2c154f491a67601d5cf82b0a23d1b4ab.js": "/precache-manifest.2c154f491a67601d5cf82b0a23d1b4ab.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4f247b2e.chunk.css.map": "/static/css/main.4f247b2e.chunk.css.map",
+    "static/js/2.7df42314.chunk.js.LICENSE.txt": "/static/js/2.7df42314.chunk.js.LICENSE.txt",
+    "static/media/UweraAndJonas.jpg": "/static/media/UweraAndJonas.674b682c.jpg",
+    "static/media/icomoon.css": "/static/media/icomoon.e84b7863.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6351fd0.js",
+    "static/js/runtime-main.3374ac37.js",
     "static/js/2.7df42314.chunk.js",
-    "static/css/main.8a33e88b.chunk.css",
+    "static/css/main.4f247b2e.chunk.css",
     "static/js/main.b6ed6f5e.chunk.js"
   ]
 }

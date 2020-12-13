@@ -23,6 +23,10 @@ class smallSlider extends React.Component {
             bottom: 0%;
           }
 
+          .place-at-center {
+            bottom: 40%;
+          }
+
           .limitHeight {
             height: 500px;
             overflow: hidden;
@@ -82,7 +86,7 @@ class smallSlider extends React.Component {
                   alt={review.altTag}
                 />
                 <div className="overlay"></div>
-                <Carousel.Caption className="show-no-border">
+                <Carousel.Caption className="show-no-border place-at-center">
                   <p className="text-align">
                     {review.text}
                     <span className="author-name">— {review.author} on {review.date}</span>

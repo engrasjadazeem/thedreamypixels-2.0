@@ -8,7 +8,7 @@ class imageSlider extends React.Component {
       <style type="text/css">
         {`
           .carousel-caption {
-            bottom: 40%;
+            bottom: 20%;
             font-family: "Roboto Slab", sans-serif;
             border: 7px solid #fff;
             padding: 30px 50px;

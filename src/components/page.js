@@ -361,7 +361,7 @@ class Page extends React.Component {
         {
           author: 'Uwera Musekura Lundsholm',
           date: 'September 30, 2018',
-          text: 'One of the best decisions we could have made during the entire wedding planning process was booking Asjad/Thedreamypixels . Not only did our pictures turn out beautifully - but he was incredibly easy to work with from beginning to end and fantastic. From scheduling meetings, to the last minute pictures we wanted the day of the wedding, he was incredibly flexible and easy going. We highly suggest meeting with Asjad and booking him for any upcoming photo needs you may have - he\'s worth every penny! He was not just a photographer but he became a friend as well. In the future we will recommend him to family and friends.',
+          text: 'One of the best decisions we could have made during the entire wedding planning process was booking Thedreamypixels . Not only did our pictures turn out beautifully - but he was incredibly easy to work with from beginning to end and fantastic. From scheduling meetings, to the last minute pictures we wanted the day of the wedding, he was incredibly flexible and easy going. We highly suggest meeting with Asjad and booking him for any upcoming photo needs you may have - he\'s worth every penny! He was not just a photographer but he became a friend as well...',
           backgroundImageUrl: 'https://i.ibb.co/3rwCb8W/03.jpg',
           imageAlt: ''
         },

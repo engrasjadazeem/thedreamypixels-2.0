@@ -50,8 +50,8 @@ class section extends React.Component {
           `}
         </style>
           <Container>
-            <Row className="row r-pb">
-              <Col className={this.props.MoreWidth ? "text-center offset-1 col-md-10 text-center section-heading" : "text-center offset-2 col-md-8 text-center section-heading"}>
+            <Row className="row justify-content-center r-pb">
+              <Col className={this.props.MoreWidth ? "text-center col-md-10 text-center section-heading" : "text-center col-md-8 text-center section-heading"}>
                 <h2 className={this.props.IsDark ? 'section-title bg-dark' : 'section-title'}>{this.props.Name}</h2>
                 <p className={this.props.IsDark ? 'lead bg-dark' : 'lead'}>{this.props.Description}</p>
               </Col>

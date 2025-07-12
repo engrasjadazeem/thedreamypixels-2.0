@@ -7,8 +7,6 @@ import Post from './post';
 import SmallSlider from './smallSlider';
 import Footer from './footer';
 
-import imageUrl from '../assets/images/thumbnails/UweraAndJonas.jpg';
-
 class Page extends React.Component {
   constructor(props) {
     super(props);
@@ -456,9 +454,9 @@ class Page extends React.Component {
         {this.state.sections.map((section, _indSection) =>
           <Section
             key={_indSection}
-            Name={this.state.language == 'en' ? section.title : section.title_sv}
+            Name={this.state.language === 'en' ? section.title : section.title_sv}
             SectionId={section.id}
-            Description={this.state.language == 'en' ? section.description : section.description_sv}
+            Description={this.state.language === 'en' ? section.description : section.description_sv}
             IsDark= {section.isDark}
             MoreWidth= {section.moreWidth}
             Content= {
@@ -496,20 +494,20 @@ class Page extends React.Component {
                     <div className="col-md-6 col-xs-12">
                       <img src={section.content.imageUrl}
                         className="portrait-photo"
-                        alt="Photographers photo" />
+                        alt="Photographers picture appears here" />
                     </div>
                     <div className="col-md-6 col-xs-12">
                       <h2 className="txt-white">{section.content.name}</h2>
-                      <span className="meta small-caps">{this.state.language == 'en' ? section.content.profession : section.content.profession_sv }</span>
-                      <p className="txt-ash-grey">{this.state.language == 'en' ? section.content.introduction : section.content.introduction_sv }</p>
+                      <span className="meta small-caps">{this.state.language === 'en' ? section.content.profession : section.content.profession_sv }</span>
+                      <p className="txt-ash-grey">{this.state.language === 'en' ? section.content.introduction : section.content.introduction_sv }</p>
                     </div>
                   </div>
                 }
 
                 { section.id === 'contact' &&
                   <div className="text-center">
-                    <p className="animate-box fadeInUp animated">{ this.state.language == 'en' ? section.content.mainLine : section.content.mainLine_sv }</p>
-                    <p className="animate-box fadeInUp animated"><a href={ section.content.buttonLink } target="_blank" className="btn btn-primary btn-lg">{ this.state.language == 'en' ? section.content.buttonText : section.content.buttonText_sv }</a></p>
+                    <p className="animate-box fadeInUp animated">{ this.state.language === 'en' ? section.content.mainLine : section.content.mainLine_sv }</p>
+                    <p className="animate-box fadeInUp animated"><a href={ section.content.buttonLink } target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">{ this.state.language === 'en' ? section.content.buttonText : section.content.buttonText_sv }</a></p>
                   </div>
                 }
               </div>

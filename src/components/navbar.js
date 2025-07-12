@@ -44,12 +44,12 @@ class nav extends React.Component {
                     <Nav.Link
                       key={index}
                       href={menuItem.link}>
-                      {this.props.language == 'en' ? menuItem.label : '' }
-                      {this.props.language == 'sv' ? menuItem.label_sv : '' }
+                      {this.props.language === 'en' ? menuItem.label : '' }
+                      {this.props.language === 'sv' ? menuItem.label_sv : '' }
                     </Nav.Link>
                   )
                 }
-                <NavDropdown title={this.props.language == 'en' ? 'Language' : 'Språk'} id="basic-nav-dropdown">
+                <NavDropdown title={this.props.language === 'en' ? 'Language' : 'Språk'} id="basic-nav-dropdown">
                   <NavDropdown.Item onClick={() => this.changeLanguage('en')}>English</NavDropdown.Item>
                   <NavDropdown.Item onClick={() => this.changeLanguage('sv')}>Swedish</NavDropdown.Item>
                 </NavDropdown>

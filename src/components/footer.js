@@ -62,7 +62,7 @@ class footer extends React.Component {
           <div className="row">
             <div className="col-md-4">
               <p className="lead animate-box fadeInUp animated">{this.props.contactData.address}</p>
-              <p className="animate-box fadeInUp animated"><a rel="noopener noreferrer" href={'mailto:' + this.props.contactData.email} target="_blank">{this.props.contactData.email}</a></p>
+              <p className="animate-box fadeInUp animated"><a rel="noopener noreferrer" href={'mailto:' + this.props.contactData.email} target="_blank" rel="noopener noreferrer">{this.props.contactData.email}</a></p>
               <p className="animate-box fadeInUp animated"><a rel="noopener noreferrer" href={'tel:' + this.props.contactData.phone}>{this.props.contactData.phone}</a></p>
             </div>
             <div className="col-md-8">
@@ -75,7 +75,7 @@ class footer extends React.Component {
           <div className="row additional-margin">
             <div className="col-md-4">
               <div className="footer-widget">
-                <p>© <a href="https://www.facebook.com/pg/thedreamypixels" target="_blank">The Dreamy Pixels</a>.</p>
+                <p>© <a href="https://www.facebook.com/pg/thedreamypixels" target="_blank" rel="noopener noreferrer">The Dreamy Pixels</a>.</p>
                 <p className="reduce-txt-size">All Rights Reserved.</p>
               </div>
             </div>
@@ -83,13 +83,13 @@ class footer extends React.Component {
               <div className="footer-widget">
                 <ul className="social pull-right">
                   <li>
-                    <a href={this.props.contactData.facebookLink} target="_blank"><i className="icon-facebook"></i></a>
+                    <a href={this.props.contactData.facebookLink} target="_blank" rel="noopener noreferrer"><i className="icon-facebook"></i></a>
                   </li>
                   <li>
-                    <a href={this.props.contactData.instagramLink} target="_blank"><i className="icon-instagram"></i></a>
+                    <a href={this.props.contactData.instagramLink} target="_blank" rel="noopener noreferrer"><i className="icon-instagram"></i></a>
                   </li>
                   <li>
-                    <a href={this.props.contactData.emailLink} target="_blank"><i className="icon-google"></i></a>
+                    <a href={this.props.contactData.emailLink} target="_blank" rel="noopener noreferrer"><i className="icon-google"></i></a>
                   </li>
                 </ul>
                 <div className="footer-widget">

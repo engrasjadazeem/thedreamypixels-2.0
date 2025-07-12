@@ -52,7 +52,7 @@ class imageSlider extends React.Component {
                 />
                 <div className="overlay"></div>
                 <Carousel.Caption>
-                  <h1>{this.props.language == 'en' ? image.title : image.title_sv}</h1>
+                  <h1>{this.props.language === 'en' ? image.title : image.title_sv}</h1>
                 </Carousel.Caption>
               </Carousel.Item>
             )
